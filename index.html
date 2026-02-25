@@ -1,122 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Dhanashri Nilesh Yadav | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f9;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhanashri Nilesh Yadav | SDN Engineer</title>
 
-        header {
-            background-color: #0a192f;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
+body {
+    background: #0f172a;
+    color: white;
+}
 
-        header p {
-            margin-top: 10px;
-            font-size: 18px;
-            color: #ccd6f6;
-        }
+nav {
+    background: #0f172a;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
 
-        section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
+nav h2 {
+    color: #38bdf8;
+}
 
-        h2 {
-            color: #0a192f;
-            border-bottom: 2px solid #0a192f;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
 
-        .card {
-            background: white;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-        }
+nav a:hover {
+    color: #38bdf8;
+}
 
-        ul {
-            line-height: 1.8;
-        }
+section {
+    padding: 100px 50px;
+    min-height: 100vh;
+}
 
-        footer {
-            background-color: #0a192f;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-        }
-    </style>
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #38bdf8;
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 20px;
+    max-width: 600px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #38bdf8;
+    border: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px #38bdf8;
+}
+
+.skills-list li {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: gray;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>Dhanashri Nilesh Yadav</h1>
-    <p>Computer Engineering Graduate | Web Developer | SDN Enthusiast</p>
-</header>
+<nav>
+    <h2>DNY</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
 
-<section>
+<section class="hero">
+    <h1>Dhanashri Nilesh Yadav</h1>
+    <p>
+        Computer Engineering Graduate | Web Developer | Networking Specialist | 
+        Software Defined Networking (SDN) Enthusiast
+    </p>
+    <a href="#" class="btn">Download Resume</a>
+</section>
+
+<section id="about">
     <h2>About Me</h2>
     <div class="card">
         <p>
-            I completed my graduation in Computer Engineering. After that, 
-            I completed my internship in Web Development. 
-            I have strong knowledge in Networking and I am highly interested in 
-            Software Defined Networking (SDN) technology.
+            I completed my graduation in Computer Engineering and successfully 
+            completed my internship in Web Development. I have strong knowledge 
+            in Computer Networking and advanced understanding of Software Defined 
+            Networking (SDN) architecture.
         </p>
     </div>
 </section>
 
-<section>
-    <h2>Skills</h2>
+<section id="skills">
+    <h2>Technical Skills</h2>
     <div class="card">
-        <ul>
+        <ul class="skills-list">
             <li>HTML, CSS, JavaScript</li>
             <li>Web Development</li>
-            <li>Computer Networking</li>
+            <li>Computer Networking (TCP/IP, Routing, Switching)</li>
             <li>Software Defined Networking (SDN)</li>
-            <li>Routing & Network Configuration</li>
+            <li>OpenFlow & SDN Controllers</li>
+            <li>Network Automation</li>
         </ul>
     </div>
 </section>
 
-<section>
+<section id="project">
     <h2>Current Project</h2>
     <div class="card">
+        <h3>Automated Routing in SDN Servers</h3>
         <p>
-            Currently, I am working on an automation project in SDN 
-            focused on Automated Routing in Servers. 
-            This project aims to improve network efficiency 
-            by dynamically configuring routing paths using SDN controllers.
+            Currently developing an SDN-based automation system for dynamic 
+            routing in server environments. The system uses an SDN controller 
+            to automatically configure routing paths, optimize traffic flow, 
+            reduce latency, and improve network efficiency.
         </p>
+        <p><strong>Goal:</strong> Intelligent, automated, scalable network infrastructure.</p>
     </div>
 </section>
 
-<section>
+<section id="contact">
     <h2>Contact</h2>
     <div class="card">
         <p>Email: ydhanashri6@gmail.com</p>
         <p>GitHub: https://github.com/dhanashri2130</p>
+        <p>Location: India</p>
     </div>
 </section>
 
 <footer>
-    © 2026 Dhanashri Nilesh Yadav | All Rights Reserved
+    © 2026 Dhanashri Nilesh Yadav | SDN & Network Automation Engineer
 </footer>
 
 </body>
